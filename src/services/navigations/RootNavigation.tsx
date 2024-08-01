@@ -22,7 +22,9 @@ function RootNavigation() {
         // animationDuration: 150,
       }}>
       {/* <Stack.Screen component={SplashScreen} name="SplashScreen" />
-      <Stack.Screen component={LoginScreen} name="LoginScreen" /> */}
+       */}
+       <Stack.Screen component={SplashScreen} name="SplashScreen" />
+       <Stack.Screen component={LoginScreen} name="LoginScreen" />
       <Stack.Screen component={MainButtonTab} name="MainButtonTab" />
       <Stack.Screen component={Scan} name="Scan" />
       <Stack.Screen component={Wallet} name="Wallet" />

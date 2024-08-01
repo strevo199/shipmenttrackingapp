@@ -32,11 +32,11 @@ const PrimaryButton = ({ disabled,backgroundColor="primaryBlack", onPress, title
         height={SrfValue(55)}
         justifyContent={"center"}
         borderWidth={0.5}
-      borderRadius={"lg"}
+      borderRadius={"sm"}
         backgroundColor={backgroundColor}
         {...rest}
       >
-        <Text letterSpacing={0.7} variant={"regular16"} color={color}>{title}</Text>
+        <Text letterSpacing={0.7} variant={"bold16"} color={color}>{title}</Text>
       </Box>
     </TouchableOpacity>
   )

@@ -50,7 +50,6 @@ export const SearchBar: React.FC<SelectInputSearchbarProps> = ({
         style={{
           height: "100%",
           flex: 1,
-          fontFamily: "Mulish-Regular",
           color: "#000",
           textTransform: "lowercase",
           paddingHorizontal: SrfValue(10),

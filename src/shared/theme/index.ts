@@ -244,192 +244,171 @@ const lightTheme = createTheme({
     body: {},
     bold8: {
       color: "textColor",
-      fontFamily: "Mulish-Bold",
       fontSize: RFValue(8),
     },
     bold10: {
       color: "textColor",
-      fontFamily: "Mulish-Bold",
       fontSize: RFValue(10),
     },
     bold12: {
       color: "textColor",
-      fontFamily: "Mulish-Bold",
       fontSize: RFValue(12),
     },
     bold14: {
       color: "textColor",
-      fontFamily: "Mulish-Bold",
       fontSize: RFValue(14),
     },
     bold16: {
-      fontFamily: "Mulish-Bold",
       color: "textColor",
       fontSize: RFValue(16),
     },
     bold18: {
       color: "textColor",
-      fontFamily: "Mulish-Bold",
       fontSize: RFValue(18),
     },
     bold20: {
       color: "textColor",
-      fontFamily: "Mulish-Bold",
       fontSize: RFValue(20),
     },
     bold22: {
-      fontFamily: "Mulish-Bold",
       color: "textColor",
       fontSize: RFValue(22),
     },
     bold24: {
-      fontFamily: "Mulish-Bold",
       color: "textColor",
       fontSize: RFValue(24),
     },
     bold32: {
-      fontFamily: "Mulish-Bold",
       color: "textColor",
       fontSize: RFValue(32),
     },
     bold36: {
       color: "textColor",
-      fontFamily: "Mulish-Bold",
       fontSize: RFValue(36),
     },
     bold48: {
-      fontFamily: "Mulish-Bold",
       color: "textColor",
       fontSize: RFValue(48),
     },
     defaults: {
       color: "primaryBlack",
       fontSize: RFValue(14),
-      fontFamily: "Mulish-Regular",
+      
     },
     medium10: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(10),
     },
     medium12: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(12),
     },
     medium14: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(14),
     },
     medium16: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(16),
 
       lineHeight: RFValue(30),
     },
     medium18: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(18),
     },
     medium20: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(20),
 
       lineHeight: RFValue(22),
     },
     medium22: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(22),
     },
     medium24: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(24),
     },
     medium8: {
       color: "textColor",
-      fontFamily: "Mulish-Medium",
       fontSize: RFValue(8),
     },
     none: {},
     regular9: {
-      fontFamily: "Mulish-Regular",
+      
       color: "textColor",
       fontSize: RFValue(9),
       
     },
     regular10: {
-      fontFamily: "Mulish-Regular",
+      
       color: "textColor",
       fontSize: RFValue(10),
       
     },
     regular12: {
-      fontFamily: "Mulish-Regular",
+      
       color: "textColor",
       fontSize: RFValue(12),
     },
     regular14: {
       color: "textColor",
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(14),
       
     },
     regular16: {
       color: "textColor",
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(16),
       
     },
     regular18: {
       color: "textColor",
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(18),
       
     },
     regular22: {
       color: "textColor",
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(22),
       
     },
     regular24: {
       color: "textColor",
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(24),
       
     },
     regular8: {
-      fontFamily: "Mulish-Regular",
+      
       color: "textColor",
       fontSize: RFValue(8),
     },
     font10: {
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(10),
       
     },
     font12: {
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(12),
     },
     font14: {
       color: "textColor",
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(14),
     },
     font8: {
-      fontFamily: "Mulish-Regular",
+      
       fontSize: RFValue(8),
     },
     title: {
       fontSize: SrfValue(32),
-      fontFamily: "Mulish-Regular",
+      
     },
   },
 
