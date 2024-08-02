@@ -53,3 +53,33 @@ export const getShipmentStatusList = async () => {
     throw {message:"Couldn't perform your request. Please make sure your phone has an Internet connection and try again",data:null}
   }
   }
+
+
+  export const getShipmentList = async (searchTerm) => {
+    try {
+      const requestBody = {
+        doctype: 'AWB',
+        fields: ['*'],
+        filters: {
+          name: ['like', `%${searchTerm}%`],
+        },
+      };
+  
+      const response = await axios.get(`${API_BASE_URL}/frappe.client.get_list`, {
+        data: requestBody,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      return response.data;
+    }catch (error) {
+      console.log(error?.response);
+      
+      const {status,data} = error?.response;
+      
+      if (status >= 400 || status <= 499) {
+        throw {message: data.message || "Currently unable to connect to server, Please try again",data:null}
+      }
+      throw {message:"Couldn't perform your request. Please make sure your phone has an Internet connection and try again",data:null}
+    }
+  };

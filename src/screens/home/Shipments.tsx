@@ -4,7 +4,7 @@ import { imageIconPack } from "@/shared/assets/icons/imageIconPack";
 import { Box } from "@/shared/components";
 import { SearchBar } from "@/shared/components/textInput/searchBar";
 import { Text } from "@/shared/components/Typography";
-import { getShipmentStatusList } from "@/shared/services/api";
+import { getShipmentList, getShipmentStatusList } from "@/shared/services/api";
 import { palette } from "@/shared/theme/palette";
 import SrfValue from "@/shared/utils/functions/SrfValue";
 import React, { useEffect, useState } from "react";
@@ -46,6 +46,8 @@ const Shipments = ({ navigation, route }: RootNavigationProps<"Shipments">) => {
   );
   const [filterPayload, setFilterPayload] = useState<StatusListType[]>([]);
   const [modalVisible, setModalVisible] = useState(false);
+  const [shipments, setShipments] = useState([]);
+
   const [tags, setTags] = useState([
     { title: "Received", id: 1 },
     { title: "Putaway", id: 2 },
@@ -59,6 +61,7 @@ const Shipments = ({ navigation, route }: RootNavigationProps<"Shipments">) => {
   const { full_name } = route.params || "Ibrahim Shaker";
 
   const handleGetStatus = async () => {
+    setIsLoading(true);
     try {
       const response = await getShipmentStatusList();
       const newList = response.message.map(item => ({
@@ -73,10 +76,24 @@ const Shipments = ({ navigation, route }: RootNavigationProps<"Shipments">) => {
     }
   };
 
+  const fetchShipments = async (searchTerm= []) => {
+    try {
+      const response = await getShipmentList(searchTerm);
+      setShipments(response);
+    } catch (error) {
+      setIsLoading(false);
+    }
+  };
+
+
   useEffect(() => {
     handleGetStatus();
+    fetchShipments();
   }, []);
 
+
+  console.log(shipments);
+  
   const handleFilterBySearch = (v = "") => {
     const newList = statusList.filter(item => {
       if (
@@ -303,7 +320,6 @@ const Shipments = ({ navigation, route }: RootNavigationProps<"Shipments">) => {
     );
   };
 
-  console.log({ filterPayload });
 
   const renderTags = ({ item }) => {
     return (
