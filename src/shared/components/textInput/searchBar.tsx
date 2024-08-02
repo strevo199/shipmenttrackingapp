@@ -18,7 +18,7 @@ type SelectInputSearchbarProps = {
 
 export const SearchBar: React.FC<SelectInputSearchbarProps> = ({
   getSearchInput,
-  placeholder = "Search for an item",
+  placeholder = "Search",
   backgroundColor,
   paddingHorizontal,
   marginTop,
@@ -30,22 +30,19 @@ export const SearchBar: React.FC<SelectInputSearchbarProps> = ({
   return (
     <View
       style={{
-        backgroundColor: backgroundColor || "transparent",
+        backgroundColor: palette.grayLight,
         borderRadius: SrfValue(10),
         paddingHorizontal: paddingHorizontal || SrfValue(10),
-        height: height || SrfValue(50),
+        height: height || SrfValue(58),
         alignItems: "center",
-        borderColor: palette.textColor2,
-        borderWidth: 1,
         flexDirection: "row",
-        marginTop: marginTop || SrfValue(10),
       }}>
-      <ImageIcon name="search" size="sml" />
+      <ImageIcon name="search" size="md" />
       <TextInput
         autoCorrect={false}
         onChangeText={getSearchInput}
         placeholder={placeholder}
-        placeholderTextColor="black"
+        placeholderTextColor={palette.textColor2}
         ref={textInputRef}
         style={{
           height: "100%",

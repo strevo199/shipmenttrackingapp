@@ -311,7 +311,6 @@ const lightTheme = createTheme({
       color: "textColor",
       fontSize: RFValue(16),
 
-      lineHeight: RFValue(30),
     },
     medium18: {
       color: "textColor",

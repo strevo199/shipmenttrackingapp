@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   createBottomTabNavigator,
 } from "@react-navigation/bottom-tabs";
@@ -10,11 +10,12 @@ import { Text } from "@/shared/components/Typography";
 import { Box } from "@/shared/components";
 import { ImageIcon } from "@/shared/assets/icons/ImageIcon";
 import SrfValue from "@/shared/utils/functions/SrfValue";
-import { Dimensions } from "react-native";
+import { Dimensions, StatusBar } from "react-native";
 import Shipments from "@/screens/home/Shipments";
 import Scan from "@/screens/home/Scan";
 import Wallet from "@/screens/home/Wallet";
 import Profile from "@/screens/home/Profile";
+import { palette } from "@/shared/theme/palette";
 
 export type TabType = {
   tabText: string;
@@ -40,22 +41,28 @@ const MainButtonTab = () => {
       tabText: "Scan",
       name: "Scan",
       iconName: "scan",
-      component: Scan,
+      component: Shipments,
     },
     {
       tabText: "Wallet",
       name: "Wallet",
       iconName: "wallet",
-      component: Wallet,
+      component: Shipments,
     },
 
     {
       tabText: "Profile",
       name: "Profile",
       iconName: "profile",
-      component: Profile,
+      component: Shipments,
     },
   ];
+
+  useEffect(() => {
+    StatusBar.setBackgroundColor(palette.whiteColor);
+    StatusBar.setBarStyle("dark-content");
+  }, [])
+  
 
   return (
     <Tab.Navigator

@@ -5,7 +5,7 @@ export type RootStackParameterList = {
     SplashScreen: undefined,
     IntroductionScreen: undefined,
     LoginScreen: undefined,
-    Shipments: undefined,
+    Shipments: { full_name: string; home_page: string; message: string },
     Scan: undefined,
     Wallet: undefined,
     MainButtonTab: undefined,

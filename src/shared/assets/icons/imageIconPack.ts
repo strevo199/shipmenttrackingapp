@@ -5,6 +5,17 @@ const imageIconPack = {
     applogo: require("@/shared/assets/images/applogo.png"),
     wallet: require("@/shared/assets/images/wallet.png"),
     shippex: require("@/shared/assets/images/shippex.png"),
+    Chevron: require("@/shared/assets/images/Chevron.png"),
+    frame: require("@/shared/assets/images/frame.png"),
+    notification: require("@/shared/assets/images/notification.png"),
+    filter: require("@/shared/assets/images/filter.png"),
+    search: require("@/shared/assets/images/search.png"),
+    arrow: require("@/shared/assets/images/arrow.png"),
+    checkedbox: require("@/shared/assets/images/checkedbox.png"),
+    checkbox: require("@/shared/assets/images/checkbox.png"),
+    arrowexpand: require("@/shared/assets/images/arrowexpand.png"),
+    box: require("@/shared/assets/images/box.png"),
+    doscan: require("@/shared/assets/images/scan.png"),
 };
 
 export { imageIconPack };

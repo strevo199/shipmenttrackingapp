@@ -14,12 +14,13 @@ const SplashScreen = ({
   const scaleY = new Animated.Value(1);
   const translateY = new Animated.Value(0);
   const backgroundColor = new Animated.Value(0);
+  const rotateY = new Animated.Value(0);  // Initial rotation value
 
   useEffect(() => {
    StatusBar.setHidden(true);
    setTimeout(() => {
      startAnimation();
-   }, 1000);
+   }, 2000);
   }, [])
 
 
@@ -31,27 +32,33 @@ const SplashScreen = ({
         useNativeDriver: false,
       }),
  
-      Animated.timing(scaleY, {
-        toValue: -1,
-        duration: 300,
-        delay:500,
-        useNativeDriver: false,
+      Animated.timing(rotateY, {
+        toValue: 1,  // This will be interpolated to 90 degrees
+        duration: 800,
+        useNativeDriver: true,
       }),
       Animated.parallel([
-        Animated.timing(translateY, {
-          toValue: 500,
+        Animated.timing(scale, {
+          toValue: 100,
           duration: 1000,
           useNativeDriver: true,
         }),
+        
+        Animated.timing(translateY, {
+          toValue: -500,
+          duration: 1000,
+          useNativeDriver: true,
+        }),
+      
         Animated.timing(backgroundColor, {
           toValue: 1,
-          duration: 1000,
+          duration: 1500,
           useNativeDriver: false,
         }),
       ]),
     ]).start(() => {
       StatusBar.setHidden(false);
-      navigation.navigate("LoginScreen");
+      navigation.replace("LoginScreen");
     });
   };
 
@@ -68,7 +75,6 @@ const SplashScreen = ({
     ],
   }
 
-  
 
   return (
     <>
