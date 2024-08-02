@@ -10,7 +10,7 @@ import { Text } from "@/shared/components/Typography";
 import { Box } from "@/shared/components";
 import { ImageIcon } from "@/shared/assets/icons/ImageIcon";
 import SrfValue from "@/shared/utils/functions/SrfValue";
-import { Dimensions, StatusBar } from "react-native";
+import { Dimensions, Platform, StatusBar } from "react-native";
 import Shipments from "@/screens/home/Shipments";
 import Scan from "@/screens/home/Scan";
 import Wallet from "@/screens/home/Wallet";
@@ -59,7 +59,10 @@ const MainButtonTab = () => {
   ];
 
   useEffect(() => {
-    StatusBar.setBackgroundColor(palette.whiteColor);
+    if (Platform.OS ==="android") {
+      
+      StatusBar.setBackgroundColor(palette.whiteColor);
+    }
     StatusBar.setBarStyle("dark-content");
   }, [])
   

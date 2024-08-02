@@ -18,6 +18,8 @@ import {
   Image,
   Keyboard,
   Modal,
+  Platform,
+  SafeAreaView,
   StatusBar,
   TextInput,
   TouchableOpacity,
@@ -33,7 +35,7 @@ const LoginScreen = ({ navigation }: RootNavigationProps<"LoginScreen">) => {
   const [isFocused, setIsFocused] = useState(false);
 
   useEffect(() => {
-    if (!modalVisible) {
+    if (!modalVisible && Platform.OS ==="android") {
       StatusBar.setBackgroundColor(palette.primaryColor);
     }
   }, [modalVisible]);
@@ -44,7 +46,10 @@ const LoginScreen = ({ navigation }: RootNavigationProps<"LoginScreen">) => {
 
   const handleModalLoginModal = () => {
     setModalVisible(true);
-    StatusBar.setBackgroundColor(palette.primaryBlack);
+    if (Platform.OS ==="android") {
+      
+      StatusBar.setBackgroundColor(palette.primaryBlack);
+    }
   };
 
   async function handleLogin() {
@@ -72,6 +77,7 @@ const LoginScreen = ({ navigation }: RootNavigationProps<"LoginScreen">) => {
     }}
 
   return (
+    <SafeAreaView style={{flex:1,backgroundColor:palette.primaryColor}}>
     <Box flex={1} backgroundColor={"primaryColor"}>
       <Box alignSelf={"center"} flex={1} width={width >= 500 ? "85%" : "100%"}>
         <Box flex={1} justifyContent={"center"} alignItems={"center"}>
@@ -239,6 +245,8 @@ const LoginScreen = ({ navigation }: RootNavigationProps<"LoginScreen">) => {
         </Box>
       </Modal>
     </Box>
+
+    </SafeAreaView>
   );
 };
 

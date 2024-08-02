@@ -8,7 +8,7 @@ export type RootStackParameterList = {
     Shipments: { full_name: string; home_page: string; message: string },
     Scan: undefined,
     Wallet: undefined,
-    MainButtonTab: undefined,
+    MainButtonTab: {screen:string,params:{}},
     Profile: undefined,
 }
 

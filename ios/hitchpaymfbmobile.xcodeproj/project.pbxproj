@@ -13,11 +13,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		216A5711125B47F0AF994027 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08E1F30D14DF47D29715D9ED /* Mulish-Medium.ttf */; };
 		22C9E1A00A964D460E007578 /* libPods-hitchpaymfbmobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CD84125EF6A3939BE0BB04 /* libPods-hitchpaymfbmobile.a */; };
-		78FF4778DCC64354831A9CA3 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38BA92C42C0D406D871F1DE5 /* Mulish-Regular.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		AB1EFF48DCD84D50AC8C5D5F /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8282CE6EAE2C4AF8B2111D2F /* Mulish-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +31,6 @@
 		00E356EE1AD99517003FC87E /* hitchpaymfbmobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hitchpaymfbmobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* hitchpaymfbmobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hitchpaymfbmobileTests.m; sourceTree = "<group>"; };
-		08E1F30D14DF47D29715D9ED /* Mulish-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mulish-Medium.ttf"; path = "../src/shared/assets/fonts/Mulish-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* hitchpaymfbmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hitchpaymfbmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = hitchpaymfbmobile/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = hitchpaymfbmobile/AppDelegate.mm; sourceTree = "<group>"; };
@@ -44,11 +40,9 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = hitchpaymfbmobile/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		16979967BD86FAAEAB1961C2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = hitchpaymfbmobile/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1A0FE4B4E9B3D1D2D6D56836 /* Pods-hitchpaymfbmobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchpaymfbmobile.release.xcconfig"; path = "Target Support Files/Pods-hitchpaymfbmobile/Pods-hitchpaymfbmobile.release.xcconfig"; sourceTree = "<group>"; };
-		38BA92C42C0D406D871F1DE5 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mulish-Regular.ttf"; path = "../src/shared/assets/fonts/Mulish-Regular.ttf"; sourceTree = "<group>"; };
 		452CE23F105EC7B9EEAB4B7F /* libPods-hitchpaymfbmobile-hitchpaymfbmobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hitchpaymfbmobile-hitchpaymfbmobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CD84125EF6A3939BE0BB04 /* libPods-hitchpaymfbmobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hitchpaymfbmobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = hitchpaymfbmobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8282CE6EAE2C4AF8B2111D2F /* Mulish-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mulish-Bold.ttf"; path = "../src/shared/assets/fonts/Mulish-Bold.ttf"; sourceTree = "<group>"; };
 		86705AE0736DE6CEA24D2BC6 /* Pods-hitchpaymfbmobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchpaymfbmobile.debug.xcconfig"; path = "Target Support Files/Pods-hitchpaymfbmobile/Pods-hitchpaymfbmobile.debug.xcconfig"; sourceTree = "<group>"; };
 		9B2B435EE5B6C04052C60673 /* Pods-hitchpaymfbmobile-hitchpaymfbmobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchpaymfbmobile-hitchpaymfbmobileTests.debug.xcconfig"; path = "Target Support Files/Pods-hitchpaymfbmobile-hitchpaymfbmobileTests/Pods-hitchpaymfbmobile-hitchpaymfbmobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE75327574075000171B0F6C /* Pods-hitchpaymfbmobile-hitchpaymfbmobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchpaymfbmobile-hitchpaymfbmobileTests.release.xcconfig"; path = "Target Support Files/Pods-hitchpaymfbmobile-hitchpaymfbmobileTests/Pods-hitchpaymfbmobile-hitchpaymfbmobileTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,9 +146,6 @@
 		B19477E67AEA4405BB579A27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8282CE6EAE2C4AF8B2111D2F /* Mulish-Bold.ttf */,
-				08E1F30D14DF47D29715D9ED /* Mulish-Medium.ttf */,
-				38BA92C42C0D406D871F1DE5 /* Mulish-Regular.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -267,9 +258,6 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				0D41A6807FE09B6E94CF50FF /* PrivacyInfo.xcprivacy in Resources */,
-				AB1EFF48DCD84D50AC8C5D5F /* Mulish-Bold.ttf in Resources */,
-				216A5711125B47F0AF994027 /* Mulish-Medium.ttf in Resources */,
-				78FF4778DCC64354831A9CA3 /* Mulish-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -97,7 +97,6 @@ const SimpleInput = ({
             paddingHorizontal: SrfValue(16),
             fontSize: RFValue(13),
             backgroundColor:"transparent",
-            fontFamily: "Mulish-Medium",
             letterSpacing: 0.7,
           }}
           placeholderTextColor={placeholderTextColor}
